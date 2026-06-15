@@ -17,10 +17,10 @@ export function AboutSection() {
         {/* SISI KIRI: Area Foto Profil (Mengambil 5 dari 12 kolom desktop) */}
         <div className="flex justify-center md:col-span-5">
           <div className="group relative h-80 w-64 overflow-hidden rounded-3xl border border-white/10 bg-white/5 transition-all duration-500 hover:border-white/20 hover:shadow-[0_0_40px_rgba(255,255,255,0.03)] sm:h-96 sm:w-72">
-            {/* Placeholder Gambar Utama (Ganti 'src' dengan path fotomu nanti, misal '/profile.jpg') */}
+            {/* Placeholder Gambar Utama */}
             <img
               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80"
-              alt="Nova Profile"
+              alt="Muhammad Maulana Malik Ibrahim"
               loading="lazy"
               className="h-full w-full object-cover opacity-60 grayscale transition-all duration-700 group-hover:scale-105 group-hover:opacity-80 group-hover:grayscale-0"
             />
@@ -31,29 +31,31 @@ export function AboutSection() {
           </div>
         </div>
 
-        {/* SISI KANAN: Teks Perkenalan & Tech Stack (Mengambil 7 dari 12 kolom desktop) */}
+        {/* SISI KANAN: Teks Perkenalan Premium & Tech Stack */}
         <div className="space-y-6 text-center sm:text-left md:col-span-7">
           <div className="space-y-2">
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">
-              / About Me
+              / Biography
             </p>
             <h2 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl text-foreground">
-              Satu Dekade Ide Menjadi{" "}
-              <span className="text-shimmer font-medium">Kenyataan Digital.</span>
+              Driven by autonomy. Forged in{" "}
+              <span className="text-shimmer font-medium">production-grade code.</span>
             </h2>
           </div>
 
           <p className="text-sm leading-relaxed text-muted-foreground sm:text-base">
-            Saya seorang{" "}
-            <span className="text-foreground font-medium">Independent Frontend Engineer</span> yang
-            berfokus menjembatani antara desain visual sinematik dengan performa kode yang optimal.
-            Menggunakan pendekatan minimalis untuk menciptakan arsitektur web yang bersih, jangkung,
-            dan interaktif.
+            I don't rely on traditional academic frameworks to define what I can build. As a fully{" "}
+            <span className="text-foreground font-medium">Self-Directed Frontend Engineer</span>, my
+            technical foundation was constructed outside the conventional classroom—forged through
+            open-source documentation, relentless trial-and-error, and an uncompromising deep dive
+            into the modern web ecosystem.
           </p>
 
           <p className="text-xs leading-relaxed text-muted-foreground/80 sm:text-sm">
-            Siap membantu menyulap kebutuhan bisnis atau proyek freelance kamu ke dalam ekosistem
-            web modern berskala global yang responsif di segala ukuran perangkat.
+            My non-traditional background is my absolute leverage. It proves I possess the rare
+            autonomy to research, adapt, and deploy complex architectures independently. I translate
+            raw business requirements into fluid, high-fidelity digital interfaces that are fast,
+            modular, and optimized globally.
           </p>
 
           {/* Bagian Tech Stack Mandiri */}
@@ -61,7 +63,7 @@ export function AboutSection() {
             <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground/60 block text-center sm:text-left">
               Current Core Stack:
             </p>
-            <div className="flex flex-wrap justify-center gap-2 sm:justify-style-none sm:justify-start">
+            <div className="flex flex-wrap justify-center gap-2 sm:justify-start">
               {techStack.map((tech) => (
                 <div
                   key={tech.name}
