@@ -30,7 +30,6 @@ const tools = [
 
 export function ProcessSection() {
   return (
-    // Style Section dikembalikan 100% seperti kode awalmu (Tanpa bg-background kaku)
     <section id="process" className="relative mx-auto max-w-5xl px-6 py-32 border-t border-white/5">
       <div className="mb-16 text-center sm:text-left">
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground mb-2">
@@ -56,9 +55,7 @@ export function ProcessSection() {
         ))}
       </div>
 
-      {/* ==========================================
-          INFINITE LOGO MARQUEE (Hanya ini bagian yang ditambah)
-          ========================================== */}
+      {}
       <div className="mt-32 w-full overflow-hidden relative py-4">
         <p className="text-center font-mono text-[9px] uppercase tracking-[0.4em] text-muted-foreground/50 mb-8">
           // EXPERTLY USING INDUSTRY STANDARDS
@@ -68,7 +65,7 @@ export function ProcessSection() {
         <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-transparent via-transparent to-transparent z-10 pointer-events-none" />
         <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-transparent via-transparent to-transparent z-10 pointer-events-none" />
 
-        {/* Track Marquee mengalir */}
+        {/* Track Marquee*/}
         <div className="flex w-max gap-16 animate-marquee whitespace-nowrap loop-track">
           <div className="flex gap-16 items-center justify-around shrink-0">
             {tools.map((t, idx) => (

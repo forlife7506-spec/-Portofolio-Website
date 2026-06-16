@@ -32,7 +32,6 @@ export function Navbar() {
     setIsOpen(false);
   };
 
-  // Fungsi Gulir Halus Mikro ke Setiap Section Target (Solusi agar tidak melompat instan)
   const handleScrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setIsOpen(false);
@@ -41,7 +40,7 @@ export function Navbar() {
     const element = document.getElementById(targetId);
 
     if (element) {
-      // Mengalkulasi offset top agar tidak terpotong tinggi Kapsul Navbar
+      // Mengalkulasi offset top
       const offsetPosition = element.offsetTop - 90;
 
       window.scrollTo({
@@ -82,7 +81,7 @@ export function Navbar() {
             </span>
           </a>
 
-          {/* Menu Navigasi Urutan Baru */}
+          {/* Menu Navigasi*/}
           <ul
             className={[
               "items-center gap-1 sm:flex transition-all duration-300",

@@ -35,7 +35,7 @@ export function RocketScroll() {
   return (
     <div
       className={[
-        "pointer-events-none z-10 transition-all duration-500 ease-in-out will-change-transform", // <- KELAS z-40 DI SINI SUDAH DIGANTI JADI z-10
+        "pointer-events-none z-10 transition-all duration-500 ease-in-out will-change-transform",
         "fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 block",
         "sm:absolute sm:top-[120vh] sm:opacity-20 md:fixed md:top-1/2 md:opacity-100",
       ].join(" ")}
@@ -46,10 +46,7 @@ export function RocketScroll() {
           direction === "down" ? "rotate-180" : "rotate-0",
         ].join(" ")}
       >
-        {/* ==========================================
-            SISTEM BADAI PARTIKEL ABSTRAK (DENSE ATOMS)
-            Setiap komponen dideklarasikan manual demi keacakan tingkat tinggi
-            ========================================== */}
+        {}
         {isScrolling && (
           <div className="absolute inset-0 w-full h-full pointer-events-none mix-blend-screen z-20">
             {/* --- KLUSTER 1: INTI KEPALA (Runcing Tengah) --- */}

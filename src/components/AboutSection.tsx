@@ -14,12 +14,12 @@ export function AboutSection() {
     <section id="about" className="relative mx-auto max-w-6xl px-6 py-32">
       {/* Grid Utama: 1 Kolom di Mobile, 2 Kolom Sejajar di Desktop (md) */}
       <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-12 md:gap-16">
-        {/* SISI KIRI: Area Foto Profil (Mengambil 5 dari 12 kolom desktop) */}
+        {}
         <div className="flex justify-center md:col-span-5">
           <div className="group relative h-80 w-64 overflow-hidden rounded-3xl border border-white/10 bg-white/5 transition-all duration-500 hover:border-white/20 hover:shadow-[0_0_40px_rgba(255,255,255,0.03)] sm:h-96 sm:w-72">
-            {/* Placeholder Gambar Utama */}
+            {}
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80"
+              src="/Profil-malik.jpg"
               alt="Muhammad Maulana Malik Ibrahim"
               loading="lazy"
               className="h-full w-full object-cover opacity-60 grayscale transition-all duration-700 group-hover:scale-105 group-hover:opacity-80 group-hover:grayscale-0"
@@ -31,7 +31,7 @@ export function AboutSection() {
           </div>
         </div>
 
-        {/* SISI KANAN: Teks Perkenalan Premium & Tech Stack */}
+        {/* SISI KANAN: Teks Perkenalan & Tech Stack */}
         <div className="space-y-6 text-center sm:text-left md:col-span-7">
           <div className="space-y-2">
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">

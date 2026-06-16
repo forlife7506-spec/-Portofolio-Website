@@ -1,4 +1,22 @@
+import React from "react";
+
 export function Hero() {
+  // Fungsi Pendeteksi Smooth Scroll Mikro dengan Deselerasi Organik
+  const handleScrollToSection = (e: React.MouseEvent<HTMLButtonElement>, targetId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+
+    if (element) {
+      // Offset 90px agar pas meluncur, judul section berikutnya tidak tertutup tinggi Navbar Kapsul kamu
+      const offsetPosition = element.offsetTop - 90;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth", // Memicu animasi interpolasi bawaan browser
+      });
+    }
+  };
+
   return (
     <section
       id="top"
@@ -10,37 +28,44 @@ export function Hero() {
         Available for select engagements · 2026
       </div>
 
-      {/* Main Headline: Komposisi tipografi mewah bawaanmu */}
+      {/* Main Headline: Komposisi tipografi */}
       <h1 className="text-balance text-5xl font-semibold leading-[1.02] tracking-tight sm:text-7xl md:text-8xl">
         <span className="text-shimmer">Interfaces that</span>
         <br />
         <span className="italic font-light text-foreground/90">feel inevitable.</span>
       </h1>
 
-      {/* Paragraph: Narasi Premium yang Membingkai Mental Otodidakmu Menjadi Mahal */}
+      {/* Paragraph: Narasi */}
       <p className="mt-8 max-w-2xl text-balance text-sm sm:text-base text-muted-foreground/90 leading-relaxed font-mono">
         Muhammad Maulana Malik Ibrahim — An autonomous frontend engineer pioneering high-fidelity
         digital spaces. Driven by self-directed engineering, obsessed with strict architecture,
         cinematic motion, and uncompromising pixel execution.
       </p>
 
-      {/* Call To Actions */}
+      {/* Call To Actions*/}
       <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
-        <a
-          href="#work"
-          className="group relative overflow-hidden rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition-transform hover:scale-[1.02]"
+        {/* Tombol 1 */}
+        <button
+          type="button"
+          onClick={(e) => handleScrollToSection(e, "work")}
+          aria-label="Scroll smoothly to look at Muhammad Maulana's selected design and code work"
+          className="group relative overflow-hidden rounded-full bg-white px-6 py-3 text-sm font-medium text-black shadow-md transition-all duration-300 ease-out hover:scale-[1.04] active:scale-95 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black"
         >
           View selected work
-          <span className="ml-2 inline-block transition-transform group-hover:translate-x-1">
+          <span className="ml-2 inline-block transition-transform duration-300 ease-out group-hover:translate-y-1">
             ↓
           </span>
-        </a>
-        <a
-          href="#contact"
-          className="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-white/10"
+        </button>
+
+        {/* Tombol 2 */}
+        <button
+          type="button"
+          onClick={(e) => handleScrollToSection(e, "contact")}
+          aria-label="Scroll smoothly down to contact section to start a new digital project together"
+          className="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-medium text-foreground shadow-sm transition-all duration-300 ease-out hover:bg-white/10 hover:scale-[1.04] active:scale-95 focus:outline-none focus:ring-2 focus:ring-white/30 focus:ring-offset-2 focus:ring-offset-black"
         >
           Start a project
-        </a>
+        </button>
       </div>
     </section>
   );

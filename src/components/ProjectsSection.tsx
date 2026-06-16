@@ -83,7 +83,7 @@ export function ProjectsSection() {
         })}
       </div>
 
-      {/* FLOATING SIDE-DRAWER PREMIUM (GLASSMORPHISM EFFECT) */}
+      {}
       <div
         role="dialog"
         aria-modal="true"
@@ -128,7 +128,7 @@ export function ProjectsSection() {
                 </span>
               </div>
 
-              {/* INDIKATOR ELEGAN UNDER CONSTRUCTION */}
+              {/* INDIKATOR UNDER CONSTRUCTION */}
               {activeProject.isComingSoon && (
                 <div className="flex items-center gap-3 rounded-xl border border-amber-500/10 bg-amber-500/[0.03] p-3.5 text-amber-400/90">
                   <AlertCircle size={16} className="animate-pulse shrink-0" />

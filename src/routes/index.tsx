@@ -13,11 +13,11 @@ import { Footer } from "@/components/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Nova — Interactive 3D Portfolio" },
+      { title: "M. Maulana Malik Ibrahim — Autonomous Frontend Engineer" },
       {
         name: "description",
         content:
-          "Cinematic dark portfolio with interactive star field and a staggered glass project showcase.",
+          "Portfolio of Muhammad Maulana Malik Ibrahim. An autonomous frontend engineer pioneering high-fidelity digital spaces.",
       },
     ],
   }),

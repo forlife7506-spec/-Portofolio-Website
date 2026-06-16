@@ -1,9 +1,13 @@
-import { Github, Linkedin, Twitter, Mail, ArrowUpRight } from "lucide-react";
+import { Github, Linkedin, MessageSquare, Mail, ArrowUpRight } from "lucide-react";
 
 const socials = [
-  { label: "GitHub", icon: Github, href: "https://github.com" },
-  { label: "LinkedIn", icon: Linkedin, href: "https://linkedin.com" },
-  { label: "X", icon: Twitter, href: "https://x.com" },
+  { label: "GitHub", icon: Github, href: "https://github.com/forlife7506-spec" },
+  {
+    label: "LinkedIn",
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/muhammad-maulana-malik-ibrahim-2250b7417/",
+  },
+  { label: "WhatsApp", icon: MessageSquare, href: "https://wa.me/6289528285875" },
 ];
 
 export function Footer() {
@@ -23,11 +27,11 @@ export function Footer() {
         </h2>
 
         <a
-          href="mailto:hello@nova.studio"
+          href="mailto:nyxius.dev@gmail.com"
           className="group mt-10 inline-flex items-center gap-3 rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition-transform hover:scale-[1.02]"
         >
           <Mail size={15} />
-          hello@nova.studio
+          nyxius.dev@gmail.com
           <ArrowUpRight
             size={15}
             className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -52,7 +56,7 @@ export function Footer() {
           </ul>
 
           <div className="flex flex-col items-start gap-1 text-xs text-muted-foreground sm:items-end">
-            <p>Nova Studio — Independent design practice</p>
+            <p>Nyxius — Independent Developer & Design Practice</p>
             <p className="font-mono">© {year} All rights reserved · Crafted with intention</p>
           </div>
         </div>

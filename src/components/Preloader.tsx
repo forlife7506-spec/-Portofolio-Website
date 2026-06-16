@@ -5,12 +5,12 @@ export function Preloader({ onComplete }: { onComplete: () => void }) {
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
-    // Animasi angka counter 0 - 100 dengan speed dinamis agar terasa natural
+    // Animasi angka counter 0 - 100 dengan speed dinamis
     const interval = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
           clearInterval(interval);
-          // Beri jeda sedikit setelah 100% agar user sempat melihat, lalu mulai fade out
+
           setTimeout(() => setFadeOut(true), 400);
           // Picu fungsi onComplete untuk membuka halaman utama setelah animasi selesai
           setTimeout(() => onComplete(), 1000);

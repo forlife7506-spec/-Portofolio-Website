@@ -81,7 +81,7 @@ export function ProjectCard({ project, side }: { project: Project; side: "left" 
             ))}
           </ul>
 
-          {/* Tombol Terisolasi: Menggunakan SVG Murni yang Aman dari Eror Impor */}
+          {/* Tombol Terisolasi: Menggunakan SVG */}
           <button
             type="button"
             aria-label={`View documentation for ${project.title}`}
